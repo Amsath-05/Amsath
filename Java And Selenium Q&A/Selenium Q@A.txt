@@ -1,0 +1,80 @@
+						Selenium Q&A
+						=========
+
+1)What is Selenium?
+	Selenium is a free (open-source) automated testing framework used to validate web applications across different browsers and platforms.
+   
+  What are the different Selenium components?	
+	Selenium has four major components – Selenium IDE, Selenium RC, Selenium Web driver, Selenium GRID.
+
+  Explain about Selenium Webdriver?
+	Selenium WebDriver is a collection of open source APIs which are used to automate the testing of a web application.
+	It supports many browsers such as Firefox, Chrome, IE, and Safari.
+
+2) How does Selenium communicate with the Web browsers?
+	To communicate between server and client (browser), selenium web driver uses JSON. 
+	JSON Wire Protocol is a REST API that transfers the information between HTTP servers. Each Browser Driver has its own HTTP server.
+
+
+3)What are the locators available  to find an element using Selenium?
+	-> By CSS ID: find_element_by_id
+	-> By CSS class name: find_element_by_class_name
+	-> By name attribute: find_element_by_name
+	-> By DOM structure or xpath: find_element_by_xpath
+	-> By link text: find_element_by_link_text
+	-> By partial link text: find_element_by_partial_link_text
+	-> By HTML tag name: find_element_by_tag_name
+
+4) Why ID is preferable than X-Path?
+	 Because ID is considered as unique key so there cannot be more than 1 elements for same ID while Xpath is created using relative path/position of elements, 
+	 so there can be cases when we can get 2 or more elements for same Xpath.
+
+5)How to select value in dropdown?
+	*selectByVisibleText
+      	*selectByIndex
+      	*selectByValue   
+
+
+6) What is the difference between Absolute X-Path and Relative X-Path?
+	
+	Absolute X-Path:
+	     It uses Complete path from the Root Element to the desire element.
+	
+	Relstive X-path:
+	    You can simply start by referencing the element you want and go from there.
+
+7) How to verify if the given check box is checked or not?
+	 *Use isSelecteD()           
+               *It returns in boolean value 
+               *Returns True if it is checked
+               *Returns False if it is unchecked
+
+8)Difference between System.setProperty and WebDriverManager?
+
+     WebDriverManager:
+ 	*WebDriverManager automates the browser setup in the Selenium code. 
+ 	*By default, it downloads the latest version of the browser binary and also the binary for the appropriate platform
+ 	*We have to add the dependency for WebDriverManager in case the code belongs to Maven or Gradle environment.
+     System.setProperty:
+ 	*It is used to configure the browser driver path. 
+ 	*The Selenium client library communicates with the ChromeDriver via the JSON Wire Protocol. 
+ 	*The Chrome browser driver acts like a link between the Selenium implementation code and the Chrome browser
+
+9) Write the syntax for preceding and following x-paths?
+	Following xpath:        
+ 	     //label[text()='Mugil']//following-sibling::input
+	Preceeding xpath:
+ 	     //input[text='Mugil']//preceeding-sibling::label
+
+10) How to get an attribute value using Selenium WebDriver?
+	To get the attribute value using selenium webdriver, we can use 'element. getAttribute(attributeName)'. 
+	If we try to get the attribute value that doesn't exists for the tag, it will return null value
+
+
+
+
+
+
+
+
+

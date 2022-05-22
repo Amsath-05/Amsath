@@ -1,0 +1,65 @@
+
+						Java Q@A
+						=========
+1)Explain about the main method in java?
+	Java main method is the entry point of any java program. Its syntax is always public static void main(String[] args) . 
+	You can only change the name of String array argument
+
+2)What are the different  Control flow Statements available in java?
+	There are many control statement available in java such as Decision making,iteration statement,bracnching ststement.
+  	     if,else,if else,nested if,switch
+  	     *Looping(Iteration)
+   	     While,do-while,for,for each
+
+3)What is the Difference betweeen break and continue statements?
+
+	Break:
+	     *The break statement is used to terminate the loop immediately
+	     *break keyword is used to indicate break statements in java programming.
+	     *It stops the execution of the loop
+	     *We can use a break with the switch statement.
+
+	Continue:
+	     *The continue statement is used to skip the current iteration of the loop.
+	     *We can not use a continue with the switch statement.
+	     *It does not stop the execution of the loop.
+
+4)What is an Array? How will you declare an array in java?
+	Array is group of similar data type its define withSquar bracket[]. 
+  	We declare array in java same as other varaible
+	*Literals
+	int arr[]={23,54,21};
+
+	*new keyword
+	it is used to create a instance of class
+
+5)When will you get ArrayIndexOutOfBoundsException?
+	We will get ArrayIndexOutOfBoundsException when the index may be negative or exceed the size of an array.
+
+6)Define the Syntax to create an object for a class?
+   What are the naming conventions to be followed while creating a class, 
+   method and a variable.Explain with examples?
+	syntax for creating object is
+  	name obj=new name();
+  	when we create instance of class by using new keyword it allocate new heap for newly created object
+	while creating naming convention should be giving as.Methods should be verbs, in mixed case with the first letter lowercase, 
+	with the first letter of each internal word capitalized.
+
+7)What is Variable?How will you declare a variables in java?
+	A variable is place to store data it has name,value,type
+
+8)What is String in java? Is it a Data Type?
+	String is immutable non-primitive datatype it cannot be replace with other data in same memory.
+
+9)What are the different ways to create the String Object in java?
+	There are three ways to create string object in java
+	1.string literals-->string str="testleaf";
+	2.new keyword-->string str1= new String("Hello!");
+	3.character array-->char ch[]={'m','d','a'};
+	string str2-new string(ch);
+
+10)What is the Difference between .Equals and ==? 
+	Equals:
+	          it is used to compare the string(check memory)
+                  ==:
+                        it is used to check the content is correct or not 
